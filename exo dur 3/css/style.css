@@ -1,0 +1,220 @@
+/* le titre */
+header>h1{
+   color: black;
+    text-align: center;
+}
+
+/* menu de navigation */
+.nav{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.nav>ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/*1er section bg en gris */
+.fgris{
+    background-color: rgb(110, 110, 110);
+    color: rgb(184, 177, 177);
+    padding: 0.6rem;
+}
+
+/* image */
+@media screen and (min-width:900px){
+.img{
+    background-image: url(../img/tenorde.gif);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+}
+
+
+
+/* Section 3 article */
+
+#hde{
+    color: black;
+    padding: 0.6rem;
+}
+
+.troisarticle{
+    background-color: white;
+    color: black;
+    padding: 0.6rem;
+}
+h3{
+    text-transform: uppercase;
+}
+
+
+/* Section avec le formulaire*/
+
+#maj{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section>hr{
+    color: #008ba3;
+    margin: 0px 100px 0px 100px;
+    align-items: center;
+
+}
+
+.midle>p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.midle>p>input{
+    border-color:#008ba3 ;
+}
+
+
+/* pied de page */
+
+.pied{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+.fab{
+    font-size: 30px;
+}
+.tio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:0;
+}
+
+.tio .fab{
+    margin:1rem;
+}
+
+.fa-twitter-square{
+    color: skyblue;
+}
+.fa-snapchat-square{
+    color: yellow;
+}
+.fa-facebook-square{
+    color:  blue;
+}
+
+.fa-pinterest-square{
+    color:  red;
+}
+
+.infolegal>ul>li{
+    color:  white;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.infolegal>ul{
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media casse couille */
+
+.responsive{
+    height: 1000px;
+    width: 1920px;
+}
+
+@media screen and (min-width: 500px){
+    /*bouton nav */
+    .nav{
+        box-sizing: border-box;
+        width: 100%;
+        height: 30px;
+        text-align: left;
+    }
+    .nav>ul>li{
+        display: inline;
+        margin: 0.6rem;
+    }
+    /*article */
+    .troisarticle{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .troisarticle>article{
+        display: inline-block;
+        width: 40% ;
+        padding-left: 3rem;
+        text-align: left;
+    }
+    #ytt{
+        padding-left: 11rem;
+    }
+     /*hr */
+    section>hr{
+        margin: 0px 200px 0px 200px;
+    }
+}
+
+
+@media screen and (min-width: 900px){
+    /*tire h1*/
+    header>h1{
+        color: black;
+         text-align: left;
+         padding-left: 2rem;
+     } 
+     /*article*/
+     .troisarticle{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .troisarticle>article{
+        display: inline-block;
+        width: 25% ;
+        padding-left: 3rem;
+        text-align: left;
+    }
+    #ytt{
+        padding-left: 3rem;
+    }
+    /* formulaire*/
+
+    .midle>p{
+        display: inline-block;
+    }
+
+    .infolegal{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
